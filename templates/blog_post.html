@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/43d94d0551.js" crossorigin="anonymous"></script>
+    <title>Blog Post</title>
+</head>
+
+<style>
+    body {
+        background-image: url(https://images.pexels.com/photos/10526919/pexels-photo-10526919.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: 13%;
+        margin-left: 2%;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .content {
+        margin-top: 10%;
+    }
+
+    .head h1:hover {
+        transform: scale(1.2);
+        width: 50vh;
+    }
+
+    table {
+        margin-right: 1%;
+    }
+</style>
+
+<body>
+
+    <div class="content">
+        <center>
+            <div class="head">
+                <h1> <i> Create Your Blog... </i> </h1>
+            </div>
+
+            <form action="/addpostauthor" method="post">
+                <center>
+                    <table border="1px" cellpadding="10px" cellspacing="5px">
+                        <tr>
+                            <td>AuthorName</td>
+                            <td><input type="text" name="name" required></td>
+                        </tr>
+                        <tr>
+                            <td>Title</td>
+                            <td><input type="text" name="title" required></td>
+                        </tr>
+                        <tr>
+                            <td>Blog</td>
+                            <td><input type="text" name="post" required></td>
+                        </tr>
+                        <tr>
+                            <td><input type="submit" value="add post"></td>
+                            <td><input type="reset" value="refresh"></td>
+                        </tr>
+                    </table>
+                </center>
+            </form>
+        </center>
+    </div>
+
+</body>
+
+</html>

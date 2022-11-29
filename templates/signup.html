@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/signup.css">
+    <title>Sign Up</title>
+</head>
+<body>
+    <div class="signup">
+        <img src="userimg.png" alt="">
+        <h1>Sign Up Now</h1>
+        <form action="/adddataauthor" method="post">
+            <input type="text" name="name" class="input-box" placeholder="Your Name">
+            <input type="number" name="age" class="input-box" placeholder="Your Age">
+            <input type="email" name="email" class="input-box" placeholder="Your Email">
+            <input type="password" name="password" class="input-box" placeholder="Your Password">
+            <p> <span><input type="checkbox"></span> I agree to the term of services</p>
+
+            <!-- <button type="button" class="signup-btn">Sign Up</button> </a> -->
+            <input class="signup-btn" type="submit" value="Sign Up">
+            <hr>
+            <p class="or">OR</p>
+            <!-- <button type="button" class="signup-btn">Login With Instagram</button> -->
+            <p>Do you have an account? <a href="/SignIn">signin</a> </p>
+        </form>
+    </div>
+</body>
+</html>

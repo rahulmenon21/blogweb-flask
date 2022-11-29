@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>view post</title>
+</head>
+
+<style>
+    body {
+        background-image: url(https://images.pexels.com/photos/10526919/pexels-photo-10526919.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: -5%;
+        margin-left: 2%;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .content {
+        margin-top: 10%;
+    }
+
+    .head h1:hover {
+        transform: scale(1.2);
+        width: 50vh;
+    }
+
+    table {
+        width: 40%;
+    }
+</style>
+
+<body>
+
+    <div class="content"></div>
+    <center>
+        <div class="head">
+            <h1>View Post</h1>
+        </div>
+        {% for i in elist %}
+        <table border="1px" cellpadding="5px" cellspacing="5px">
+            <thead>
+                
+                <tr>
+                    <td>Name</td>
+                    <td>{{i[0]}}</td>
+                </tr>
+                <tr>
+                    <td>Title</td>
+                    <td>{{i[1]}}</td>
+                </tr>
+                <tr>
+                    <td>Post</td>
+                    <td>{{i[2]}}</td> <br>
+                </tr>
+               
+            </thead>
+        </table> 
+        {% endfor %} <br>
+    </center>
+    </div>
+
+</body>
+
+</html>

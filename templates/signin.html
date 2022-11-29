@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/signin.css">
+    <title>Sign In</title>
+</head>
+<body>
+    <div class="signin">
+        <img src="userimg.png" alt="">
+        <h1>Sign in</h1>
+        <form action="/loga" method="post">
+            <input name="email" type="email" class="input-box" placeholder="Your Email">
+            <input name="password" type="password" class="input-box" placeholder="Your Password">
+
+            <!-- <a href=""> <button type="button" class="signin-btn">Sign in</button> </a> -->
+             <input class="signin-btn" type="submit" value="Sign in">
+            <hr>
+            <p class="or">OR</p>
+            <p>Don't have an account? <a href="/SignUp">signup</a> </p>
+        </form>
+    </div>
+</body>
+</html>
